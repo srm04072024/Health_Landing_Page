@@ -15,30 +15,44 @@ li {
   padding: 1rem;
   position: relative;
   left: 2rem;
-  font-size: 1rem;
+  font-size: 1.5rem;
+  padding-left: 1.5rem;
 }
 #logo ::before {
   content: "";
-  height: 1.3rem;
-  width: 1.3rem;
+  height: 1.5rem;
+  width: 1.5rem;
   background-color: gray;
   position: absolute;
   border-radius: 50%;
   left: -0.5rem;
   top: 1rem;
 }
+ul {
+  padding: 1rem 2rem;
+}
 li a {
   text-decoration: none;
   display: block;
   padding: 1rem;
   color: black;
+  font-size: 1.5rem;
 }
 main {
+  width: 100vw;
+}
+.page-container {
   width: 1300px;
+  /* height: 3000px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  gap: 5rem;
 }
 .text-container-1 {
   text-align: center;
-  line-height: 2rem;
+  line-height: 5rem;
 }
 h1 {
   font-size: 65.34px;
@@ -53,6 +67,11 @@ button {
   height: 56px;
   width: 251px;
   border-radius: 67px;
+  background-color: #285e67;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 3rem;
 }
 
 .img-container-1 {
@@ -160,7 +179,7 @@ button {
   width: 650px;
   /* margin: 0 auto; */
   position: absolute;
-  top: 15%;
+  top: 13%;
   left: 25%;
 }
 .img-text-box img {
@@ -182,11 +201,39 @@ button {
 }
 
 .text-box {
-  height: 190px;
+  /* height: 190px; */
   width: 650px;
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 2rem;
   color: white;
+}
+.interaction-box {
+  height: 356px;
+  width: 1165px;
+  background-color: #fce2d7;
+  border-radius: 12px;
+  position: absolute;
+  left: 5%;
+  top: 70%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.icon2 {
+  width: fit-content;
+  display: flex;
+  margin: 0 auto;
+}
+.icon2 img {
+  height: 82px;
+  width: 82px;
+  padding: 5px;
+}
+p {
+  text-align: center;
+  font-size: 20px;
+}
+.icon-conatiner {
+  margin-top: 50%;
 }
