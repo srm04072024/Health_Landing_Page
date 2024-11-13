@@ -272,7 +272,7 @@ footer {
   margin-right: 1rem;
 }
 
-@media screen and (max-width: 1300px) {
+/* @media screen and (max-width: 1200px) {
   span[class="img-container-2"],
   span[class="img-container-4"] {
     display: none;
@@ -284,9 +284,9 @@ footer {
     gap: 10%;
     width: 100%;
   }
-}
-@media screen and (min-width: 1300px) {
+} */
+/* @media screen and (min-width: 1200px) {
   .icon {
     display: none;
   }
-}
+} */
