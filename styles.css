@@ -43,12 +43,13 @@ main {
 }
 .page-container {
   width: 1300px;
-  /* height: 3000px; */
+  height: fit-content;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   margin: 0 auto;
   gap: 5rem;
+  margin-bottom: 15rem;
 }
 .text-container-1 {
   text-align: center;
@@ -235,5 +236,9 @@ p {
   font-size: 20px;
 }
 .icon-conatiner {
-  margin-top: 50%;
+  margin-top: 40%;
+}
+footer {
+  height: 245px;
+  background-color: #285e67;
 }
