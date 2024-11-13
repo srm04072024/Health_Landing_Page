@@ -195,12 +195,12 @@ button {
   top: 10%;
   margin: 0 auto;
 }
-.img-text-box img {
+.img-box {
   width: 10%;
   height: 30%;
   min-width: 92.12px;
   align-self: center;
-  display: inline;
+  /* display: inline; */
 }
 .img-text-box h3 {
   font-size: 37.9px;
@@ -272,7 +272,7 @@ footer {
   margin-right: 1rem;
 }
 
-/* @media screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
   span[class="img-container-2"],
   span[class="img-container-4"] {
     display: none;
@@ -284,9 +284,7 @@ footer {
     gap: 10%;
     width: 100%;
   }
-} */
-/* @media screen and (min-width: 1200px) {
-  .icon {
+  span[class="img-box"] {
     display: none;
   }
-} */
+}
