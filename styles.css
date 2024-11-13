@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+header {
+  padding: 0 3rem;
+}
 ul {
   list-style-type: none;
   overflow: hidden;
@@ -241,4 +244,17 @@ p {
 footer {
   height: 245px;
   background-color: #285e67;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 3rem;
+}
+.footer-list a {
+  color: white;
+}
+.footer-icon-container {
+  margin-left: 3rem;
+}
+.footer-icon-container img {
+  margin-right: 1rem;
 }
