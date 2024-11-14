@@ -75,8 +75,8 @@ h2 {
   font-size: max(3vw, 1.5rem);
 }
 button {
-  height: min(3rem, 30vw);
-  width: min(12rem, 50vw);
+  height: max(2rem, 4vw);
+  width: max(7rem, 17vw);
   border-radius: 67px;
   background-color: #285e67;
   border: none;
@@ -212,17 +212,17 @@ button {
   margin: 0 auto;
 }
 .img-box {
-  width: 10%;
+  width: fit-content;
   height: 30%;
-  min-width: 92.12px;
+
   align-self: center;
 }
 .img-text-box h3 {
   font-size: max(4vw, 2rem);
 }
 .img-text-box button {
-  height: min(45px, 20vw);
-  width: min(200px, 40vw);
+  height: max(2rem, 4vw);
+  width: max(7rem, 17vw);
   background-color: rgba(0, 0, 0, 0);
   border: 2px solid rgb(255, 255, 255);
   align-self: center;
@@ -258,7 +258,7 @@ button {
 .icon2 img {
   height: 82px;
   width: 82px;
-  padding: 5px;
+  padding: 15px;
 }
 p {
   text-align: center;
@@ -320,15 +320,19 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem;
+    gap: 2rem;
     height: fit-content;
   }
   .container-3 {
     height: fit-content;
   }
+  #img-container-3 {
+    width: 100%;
+    height: 50%;
+  }
 }
 
-@media screen and (max-width: 998px) {
+@media screen and (max-width: 768px) {
   div[class="img-container-2"],
   div[class="img-container-4"] {
     display: none;
@@ -350,5 +354,6 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
+    padding: 1rem;
   }
 }
