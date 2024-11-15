@@ -21,6 +21,9 @@ ul {
 li {
   float: right;
 }
+li a {
+  text-align: center;
+}
 #logo {
   float: left;
   padding: 1rem;
@@ -269,17 +272,18 @@ button {
 .icon2 img {
   height: 82px;
   width: 82px;
-  padding: 15px;
+  padding: 5px;
 }
 p {
   text-align: center;
-  font-size: 15px;
+  font-size: 1rem;
 }
 .icon-container {
   display: flex;
   margin: auto 0;
   flex-direction: column;
   height: fit-content;
+  padding: 0.5rem;
 }
 footer {
   height: 245px;
@@ -302,7 +306,7 @@ footer {
 .footer-icon-container img {
   align-self: baseline;
 }
-
+/* Responsive Part */
 @media screen and (max-width: 576px) {
   header,
   footer {
@@ -383,5 +387,58 @@ footer {
   }
   .content-text {
     font-size: small;
+  }
+}
+/* Animation Part */
+.big {
+  transition: transform 0.3s ease-in-out;
+}
+.big:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.242);
+  border-radius: 16px;
+}
+
+li a:hover {
+  animation: heading 0.5s ease-in-out;
+  color: red;
+}
+@keyframes heading {
+  0% {
+    scale: 1;
+  }
+  100% {
+    scale: 1.3;
+  }
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0);
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.242);
+}
+.icon-container:hover {
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.199) inset;
+  border-radius: 1rem;
+}
+.icon-container * {
+  transition: transform 0.4s ease-in-out;
+}
+.icon-container *:hover {
+  transform: scale(0.9);
+}
+.img-icon-3:hover {
+  animation: iconAnimation 0.5s ease-in-out;
+}
+.icon:hover {
+  animation: iconAnimation 0.5s ease-in-out;
+}
+@keyframes iconAnimation {
+  0% {
+    transform: rotate(0deg);
+    border-radius: 50%;
+  }
+  100% {
+    transform: rotate(360deg);
+    border-radius: 25%;
   }
 }
