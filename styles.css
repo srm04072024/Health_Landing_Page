@@ -72,6 +72,7 @@ main {
 }
 h1 {
   font-size: max(5vw, 1.5rem);
+  line-height: 2rem;
 }
 p {
   font-size: 1vw;
@@ -89,7 +90,7 @@ button {
   border: none;
   color: white;
   font-size: max(1.5vw, 1rem);
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .img-container-1 {
@@ -225,7 +226,6 @@ button {
 .img-box {
   width: fit-content;
   height: 30%;
-
   align-self: center;
 }
 .img-text-box h3 {
@@ -270,9 +270,8 @@ button {
   margin: 0 auto;
 }
 .icon2 img {
-  height: 82px;
-  width: 82px;
-  padding: 5px;
+  height: min(20vw, 5rem);
+  width: min(20vw, 5rem);
 }
 p {
   text-align: center;
@@ -334,12 +333,19 @@ footer {
     gap: 1rem;
     height: fit-content;
   }
+
   .interaction-box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
     height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr;
+    bottom: -25%;
+  }
+  .img-box {
+    display: none;
+  }
+  .img-text-box {
+    gap: 0;
+    top: 5%;
   }
   .container-3 {
     height: fit-content;
@@ -357,11 +363,19 @@ footer {
     width: 100%;
   }
   .text-box {
-    gap: 10vw;
+    gap: 5vw;
+  }
+  .text-box bottom {
+    margin-bottom: 0;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and(max-width: 768px) {
+  ul {
+    margin: 0;
+    padding: 0;
+    /* display: none; */
+  }
   div[class="img-container-2"],
   div[class="img-container-4"] {
     display: none;
@@ -378,12 +392,8 @@ footer {
     margin: 0 auto;
     text-align: center;
   }
-  .interaction-box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    padding: 1rem;
+  .text-box {
+    gap: 3rem;
   }
   .content-text {
     font-size: small;
