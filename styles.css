@@ -359,6 +359,9 @@ footer {
   .text-box {
     gap: 10vw;
   }
+  .img-box {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
