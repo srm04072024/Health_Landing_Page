@@ -3,11 +3,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  height: fit-content;
+}
 header {
   position: sticky;
   top: 0;
   background-color: white;
   z-index: 100000;
+  width: fit;
 }
 ul {
   list-style-type: none;
@@ -33,7 +37,7 @@ li {
   position: absolute;
   border-radius: 50%;
   left: -0.5rem;
-  top: 1rem;
+  top: 0.8rem;
 }
 ul {
   padding: 1rem 2rem;
@@ -156,19 +160,20 @@ button {
 }
 .img-icon-container-3 {
   display: inline-block;
-  max-width: 52px;
-  width: 25%;
+  min-width: 3rem;
+  width: min(7vw, 4rem);
   aspect-ratio: 1;
   border: 2px solid #285e67;
   border-radius: 50%;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .img-icon-3 {
   height: 30.99px;
   width: 27.27px;
-  position: absolute;
-  top: 15%;
-  left: 15%;
+  display: flex;
+  align-self: center;
 }
 .list-text-container-3 {
   display: flex;
@@ -194,12 +199,15 @@ button {
   align-items: center;
   justify-content: space-evenly;
 }
+.container-5 {
+  position: relative;
+}
 .img-container-5 {
   background-image: url(./Assets/background.png);
   background-size: 100% 100%;
   height: 667px;
   background-repeat: no-repeat;
-  position: relative;
+  /* position: relative; */
 }
 .img-text-box {
   display: flex;
@@ -239,6 +247,9 @@ button {
   color: white;
   margin: 0 auto;
 }
+.text-box p {
+  line-height: 2rem;
+}
 .interaction-box {
   height: 50%;
   width: 80%;
@@ -276,6 +287,9 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
+  bottom: 0;
+  width: 100vw;
 }
 .footer-list a {
   color: white;
@@ -338,6 +352,9 @@ footer {
   .img-container-1 img {
     width: 100%;
   }
+  .text-box {
+    gap: 10vw;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -363,5 +380,8 @@ footer {
     justify-content: center;
     gap: 1rem;
     padding: 1rem;
+  }
+  .content-text {
+    font-size: small;
   }
 }
